@@ -1,0 +1,24 @@
+# Configuração do Firewall da VPS
+
+Nessa aula vamos Configurar o Firewall da VPS
+
+## Portas comuns para configurar o Firewall:
+
+| Tipo | Porta  | Descrição                                             |
+|------|--------|-------------------------------------------------------|
+| ICMP | ICMP   | Permite usar o Ping                                   |
+| TCP  | 22     | Porta SSH                                             |
+| TCP  | 80     | Porta HTTP                                            |
+| TCP  | 443    | Porta HTTPS / SSL                                     |
+| TCP  | 2377   | TCP para comunicação entre workers e managers         |
+| TCP  | 2376   | TCP para comunicação entre workers e managers         |
+| TCP  | 7946   | TCP/UDP para descoberta de nodes de rede de overlay   |
+| UDP  | 7946   | TCP/UDP para descoberta de nodes de rede de overlay   |
+| UDP  | 4789   | Rede Overlay do Docker Swarm                          |
+| TCP  | 3306   | Porta para MySQL                                      |
+| TCP  | 5432   | Porta para Postgres                                   |
+| TCP  | 5672   | Porta para o RabbitMQ                                 |
+| TCP  | 6379   | Porta para o Redis                                    |
+| TCP  | 9001   | Porta interna do Portainer Agent                      |
+| TCP  | 9443   | Porta interna do Portainer Agent com SSL              |
+| TCP  | 27017  | Porta para o MongoDB                                  |
